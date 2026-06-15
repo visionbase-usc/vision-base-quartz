@@ -246,7 +246,7 @@ plugins:
       position: afterBody
       priority: 50
       display: all
-  - source: ./plugins/darkmode
+  - source: github:visionbase-usc/quartz-darkmode-vb
     enabled: true
     options: {}
     order: 50
