@@ -15,30 +15,33 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      title: Manrope
+      header: Manrope
+      body: Noto Sans TC
       code: IBM Plex Mono
     colors:
+      # VISION BASE brand identity — light mode is the inverted (Vision White) variant.
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#ffffff" # Vision White (page bg)
+        lightgray: "#e5e5e5" # hairline dividers
+        gray: "#b8b8b8" # graph links / muted lines
+        darkgray: "#2b2b2b" # body text
+        dark: "#0f0f0f" # Base Black (headings)
+        secondary: "#d2520f" # VB Orange (darkened for contrast on white) — links/accent
+        tertiary: "#2b86b4" # VB Blue (darkened) — hover
+        highlight: rgba(249, 100, 25, 0.1) # orange-tinted internal-link / code bg
+        textHighlight: "#e6e14366" # VB Yellow ==highlight==
+      # Dark ("night") mode is the default — Base Black brand variant.
       darkMode:
-        light: "#0f0f0f"
-        lightgray: "#2a2a2a"
-        gray: "#8a8a8a"
-        darkgray: "#d4d4d4"
-        dark: "#ffffff"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0f0f0f" # Base Black (page bg)
+        lightgray: "#2a2a2a" # Divider — hairlines / card borders
+        gray: "#8a8a8a" # Muted Text — captions, graph links
+        darkgray: "#e8e8e8" # body text (near Vision White, comfortable)
+        dark: "#ffffff" # Vision White (headings)
+        secondary: "#f96419" # VB Orange — links / accent
+        tertiary: "#3da1d3" # VB Blue — hover
+        highlight: rgba(249, 100, 25, 0.12) # orange-tinted internal-link / code bg
+        textHighlight: "#f9641955" # VB Orange ==highlight==
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -99,6 +102,24 @@ plugins:
     order: 92
   - source: github:quartz-community/fonts
     enabled: true
+    options:
+      fontOrigin: googleFonts
+      # Load an Avenir-Next-like geometric sans (Manrope) for Latin headings/body,
+      # and Noto Sans TC (思源黑體) for Chinese. The exact font-family stack —
+      # "Avenir Next" first so Apple devices get the real brand font — is set in
+      # quartz/styles/custom.scss; this just makes sure the webfonts get loaded.
+      title:
+        name: Manrope
+        weights: [400, 600, 700, 800]
+      header:
+        name: Manrope
+        weights: [400, 600, 700, 800]
+      body:
+        name: Noto Sans TC
+        weights: [400, 500, 700]
+      code:
+        name: IBM Plex Mono
+        weights: [400, 600]
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
@@ -191,8 +212,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/visionbase-usc
+        Vault: https://github.com/visionbase-usc/vision_base_vault
+        Quartz: https://quartz.jzhao.xyz
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
