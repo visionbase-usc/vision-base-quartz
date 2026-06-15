@@ -30,11 +30,11 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
+        light: "#0f0f0f"
+        lightgray: "#2a2a2a"
+        gray: "#8a8a8a"
         darkgray: "#d4d4d4"
-        dark: "#ebebec"
+        dark: "#ffffff"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
@@ -167,12 +167,6 @@ plugins:
     layout:
       position: left
       priority: 10
-  - source: github:quartz-community/darkmode
-    enabled: true
-    layout:
-      position: left
-      priority: 30
-      group: toolbar
   - source: github:quartz-community/reader-mode
     enabled: true
     layout:
@@ -252,6 +246,14 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source: ./plugins/darkmode
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
 layout:
   groups:
     toolbar:
