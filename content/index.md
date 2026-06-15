@@ -1,4 +1,8 @@
-# vision_base_vault
+---
+title: VISION BASE Lab
+---
+
+# VISION BASE Lab — 共用知識庫
 
 **VISION BASE Lab** 共用知識庫（Obsidian Vault），透過 [Obsidian Git](https://github.com/Vinzent03/obsidian-git) 外掛自動與 [`visionbase-usc/vision_base_vault`](https://github.com/visionbase-usc/vision_base_vault) 同步。研究主軸：**Digital Twin + Physical AI**。
 
