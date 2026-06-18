@@ -2,16 +2,18 @@
 title: Google Drive 結構診斷報告
 author: visionbase-usc
 created: 2026-06-18
-draft: true   # ⚠️ 含密碼檔名與安全細節，draft:true 讓 Quartz remove-draft 過濾器排除，不發布到公開 Pages 站
+draft: true   # 內部營運盤點文件，draft:true 讓 Quartz remove-draft 排除，不渲染到公開 Pages 站
 tags: [type/note, status/review, area/governance]
 ---
 
 # Google Drive 結構診斷報告
 
-> 📌 **狀態：待團隊討論**。本報告為 VISION BASE 團隊 Google Drive（`visionbase.usc@gmail.com`）的一次性結構快照，供清理與治理討論用。清理動作會動到實際雲端硬碟，**請團隊先分工再執行**。
+> 📌 **狀態：待團隊討論**。本報告為 VISION BASE 團隊 Google Drive 的一次性結構快照，供清理與治理討論用。清理動作會動到實際雲端硬碟，**請團隊先分工再執行**。
+>
+> ⚠️ **本檔會同步到公開 repo（vision-base-quartz）**，故已移除敏感檔名／帳號等細節；需要明確資訊請走內部頻道。
 
 - **診斷日期**：2026-06-18
-- **帳號**：visionbase.usc@gmail.com
+- **帳號**：VISION BASE 團隊雲端帳號
 - **範圍**：根目錄結構 + 全資料夾 + 共用檔案
 
 ---
@@ -78,9 +80,11 @@ tags: [type/note, status/review, area/governance]
 
 ## 三、🔐 安全 / 權限提醒（重要）
 
-- 根目錄 `00_行政文件` 內有一份 **`vision base 各種帳號密碼`** 文件。
-- 請務必確認其共用權限**不是「知道連結的人皆可檢視」**。
-- 建議：這類內容不該放雲端純文字檔，改用密碼管理工具（如 1Password / Bitwarden）。
+> ⚠️ 具體檔名與位置已自本（公開同步）文件移除，請見內部頻道。
+
+- 硬碟中存在**含敏感登入資訊**的文件。
+- 行動 1：確認該類文件的共用權限**非「知道連結的人皆可檢視」**。
+- 行動 2：理想上改用密碼管理工具（如 1Password / Bitwarden），勿以雲端純文字檔保存帳密。
 
 ---
 
