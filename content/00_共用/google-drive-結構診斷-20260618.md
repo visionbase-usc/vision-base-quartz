@@ -2,6 +2,7 @@
 title: Google Drive 結構診斷報告
 author: visionbase-usc
 created: 2026-06-18
+draft: true   # ⚠️ 含密碼檔名與安全細節，draft:true 讓 Quartz remove-draft 過濾器排除，不發布到公開 Pages 站
 tags: [type/note, status/review, area/governance]
 ---
 
