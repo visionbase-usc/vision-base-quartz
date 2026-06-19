@@ -17,6 +17,10 @@ tags: [type/note, status/done, area/tools, area/governance]
 | [[ai-frameworks/rag/rag\|ai-frameworks/rag/]] | RAG patterns、contextual embeddings |
 | [[dev/dev\|dev/]] | Git / GitHub workflow、IDE 設定、CI/CD |
 
+## 筆記
+
+- [[n8n-automation-orchestration|AI 自動化編排架構 — n8n 確定性骨架 + 各單位訂閱 AI]]（提醒/重複任務的組織級落地架構與選型）
+
 ## 之後可能擴充
 
 - `tools/unreal/` — UE5 / 藍圖 / PCG
