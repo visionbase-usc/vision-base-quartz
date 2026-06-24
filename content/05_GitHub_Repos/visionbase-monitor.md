@@ -4,7 +4,7 @@ author: metaarchetech
 created: 2026-05-24
 tags: [type/note, status/done, area/governance, project/visionbase-lab]
 ---
-
+ 
 # visionbase-monitor
 
 VISION BASE Lab 區網裝置監控 + 攝影機視覺分析站。Phase 0(scaffold)→ Phase 1A(真實掃描)→ Phase 1B(裝置分類)→ Phase 1C(VB 品牌識別套用),目前停在 Phase 1C 完成,下一步進 Phase 2(RTSP + YOLOv8 串流)。
